@@ -1,21 +1,21 @@
 const imagesDices = [
-  "https://cdn.glitch.global/6ca5e966-140d-4d1f-a017-cfef39f26071/die_yellow.svg",
-  "https://cdn.glitch.global/6ca5e966-140d-4d1f-a017-cfef39f26071/die_blue.svg",
-  "https://cdn.glitch.global/6ca5e966-140d-4d1f-a017-cfef39f26071/die_green.svg",
-  "https://cdn.glitch.global/6ca5e966-140d-4d1f-a017-cfef39f26071/die_black.svg",
+  "assets/die_yellow.svg",
+  "assets/die_blue.svg",
+  "assets/die_green.svg",
+  "assets/die_black.svg",
 ];
 
 const imagesClasses = [
-  "https://cdn.glitch.global/6ca5e966-140d-4d1f-a017-cfef39f26071/class_attacker.svg?v=1747137495847",
-  "https://cdn.glitch.global/6ca5e966-140d-4d1f-a017-cfef39f26071/class_defender.svg?v=1747137494530",
-  "https://cdn.glitch.global/6ca5e966-140d-4d1f-a017-cfef39f26071/class_archer.svg?v=1747137497180",
-  "https://cdn.glitch.global/6ca5e966-140d-4d1f-a017-cfef39f26071/class_tactician.svg?v=1747137492925",
+  "assets/class_attacker.svg?v=1747137495847",
+  "assets/class_defender.svg?v=1747137494530",
+  "assets/class_archer.svg?v=1747137497180",
+  "assets/class_tactician.svg?v=1747137492925",
 ];
 
 const imageBane =
-  "https://cdn.glitch.global/6ca5e966-140d-4d1f-a017-cfef39f26071/scion.svg";
+  "assets/scion.svg";
 const imageActiveBane =
-  "https://cdn.glitch.global/6ca5e966-140d-4d1f-a017-cfef39f26071/scion_active.svg";
+  "assets/scion_active.svg";
 
 const storeKey = "victorum_mercury_logbook";
 

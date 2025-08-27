@@ -27,9 +27,11 @@ img.img2x {
   border-radius: 8px;
   padding: 1.75rem 1rem 1rem 1rem;
 }
+
 .hero-box {
   border-color: #b1242e;
 }
+
 .generic-box {
   border-color: #292c3a;
 }
@@ -38,12 +40,14 @@ img.img2x {
   font-size: 1rem;
   font-weight: 700 !important;
 }
+
 .badge-hero {
   background-color: white;
   border: 2px solid #b1242e;
   color: #b1242e;
   font-weight: normal;
 }
+
 .badge-generic {
   background-color: white;
   border: 2px solid #292c3a;
@@ -63,12 +67,15 @@ img.img2x {
   align-items: center;
   gap: 5px;
 }
+
 .generic-stats img {
   width: 32px;
 }
+
 .generic-stats span {
   flex-grow: 1;
 }
+
 .generic-stats div {
   width: 100%;
 }
@@ -78,6 +85,7 @@ img.img2x {
     min-width: 100px;
     flex-grow: unset;
   }
+
   .generic-stats div {
     width: auto;
   }
@@ -88,7 +96,7 @@ img.img2x {
   margin: auto;
   max-width: 1140px;
 
-  background-image: url("https://cdn.glitch.global/6ca5e966-140d-4d1f-a017-cfef39f26071/paper_background.jpg?v=1747232993837");
+  background-image: url("assets/paper_background.jpg?v=1747232993837");
   margin-top: 0.5rem;
   border-radius: 16px;
   box-shadow: 5px 5px 5px #c1c1c1;
@@ -118,7 +126,9 @@ input[type="number"] {
   gap: 5px;
   justify-content: flex-start;
 }
+
 @media screen and (min-width: 996px) {
+
   .track,
   .multi-track {
     justify-content: center;
@@ -161,12 +171,14 @@ input[type="number"] {
   border: 2px solid #541A00;
   box-shadow: inset 2px 2px 4px #541A00, inset -2px -2px 4px #cc3c52;
 }
+
 .track.track-leadership div.active {
   background: #e3dac3;
   color: #000000;
   border: 2px solid #1D1D1B;
   box-shadow: inset 2px 2px 4px #1D1D1B, inset -2px -2px 4px #e3dac3;
 }
+
 .track.track-blessings div.active {
   background: #ffec18;
   color: #000000;
