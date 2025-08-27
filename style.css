@@ -1,0 +1,247 @@
+body {
+  font-family: "Source Serif 4", serif;
+  font-optical-sizing: auto;
+  background: #e7e7e7;
+}
+
+.btn-link {
+  color: black;
+  text-decoration: underline;
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 1.2rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+img.img2x {
+  width: auto;
+  height: 32px;
+}
+
+.section-box {
+  position: relative;
+  border: 2px solid #b1242e;
+  border-radius: 8px;
+  padding: 1.75rem 1rem 1rem 1rem;
+}
+.hero-box {
+  border-color: #b1242e;
+}
+.generic-box {
+  border-color: #292c3a;
+}
+
+.badge {
+  font-size: 1rem;
+  font-weight: 700 !important;
+}
+.badge-hero {
+  background-color: white;
+  border: 2px solid #b1242e;
+  color: #b1242e;
+  font-weight: normal;
+}
+.badge-generic {
+  background-color: white;
+  border: 2px solid #292c3a;
+  color: #292c3a;
+  font-weight: normal;
+}
+
+.icon-legend {
+  position: absolute;
+  left: -1rem;
+  top: -1rem;
+}
+
+.generic-stats {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 5px;
+}
+.generic-stats img {
+  width: 32px;
+}
+.generic-stats span {
+  flex-grow: 1;
+}
+.generic-stats div {
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .generic-stats span {
+    min-width: 100px;
+    flex-grow: unset;
+  }
+  .generic-stats div {
+    width: auto;
+  }
+}
+
+.container {
+  padding: 1rem 1.5rem;
+  margin: auto;
+  max-width: 1140px;
+
+  background-image: url("https://cdn.glitch.global/6ca5e966-140d-4d1f-a017-cfef39f26071/paper_background.jpg?v=1747232993837");
+  margin-top: 0.5rem;
+  border-radius: 16px;
+  box-shadow: 5px 5px 5px #c1c1c1;
+}
+
+input[type="text"] {
+  padding: 2px 0;
+  font-size: 1rem;
+  font-weight: 600;
+  border: 0;
+  /*border-bottom: 1px solid #4B4B48;*/
+}
+
+input[type="number"] {
+  padding: 5px 10px;
+  font-size: 1rem;
+  font-weight: 600;
+  max-width: 54px;
+  border: 0;
+  border-bottom: 1px solid #4B4B48;
+}
+
+.track,
+.multi-track {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: flex-start;
+}
+@media screen and (min-width: 996px) {
+  .track,
+  .multi-track {
+    justify-content: center;
+  }
+}
+
+.track div {
+  width: 38px;
+  height: 38px;
+  background: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  border: 1px solid #cccccc;
+  opacity: 0.55;
+}
+
+.track div.active {
+  background: #212121;
+  color: #F6BD75;
+  border: 2px solid #F6BD75;
+  opacity: 1;
+  box-shadow: inset 2px 2px 4px #212121, inset -2px -2px 4px #936225;
+}
+
+.track-symbols div::after {
+  content: attr(data-symbol);
+  font-weight: bold;
+}
+
+.track.single-select div.active {
+  background: #212121;
+}
+
+.track.track-health div.active {
+  background: #cc3c52;
+  border: 2px solid #541A00;
+  box-shadow: inset 2px 2px 4px #541A00, inset -2px -2px 4px #cc3c52;
+}
+.track.track-leadership div.active {
+  background: #e3dac3;
+  color: #000000;
+  border: 2px solid #1D1D1B;
+  box-shadow: inset 2px 2px 4px #1D1D1B, inset -2px -2px 4px #e3dac3;
+}
+.track.track-blessings div.active {
+  background: #ffec18;
+  color: #000000;
+  border: 2px solid #57510A;
+  box-shadow: inset 2px 2px 4px #57510A, inset -2px -2px 4px #ffec18;
+}
+
+.multi-track {
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+
+.track-label {
+  font-weight: bold;
+  font-size: 1.4rem;
+  text-align: right;
+  width: 3rem;
+}
+
+.scion-track div {
+  position: relative;
+}
+
+.scion-track div::after {
+  content: attr(data-icon);
+  position: absolute;
+  font-size: 0.7rem;
+}
+
+.dice-grid {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.dice-column {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 5px;
+}
+
+.dice {
+  width: 38px;
+  height: 38px;
+  background: transparent;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+
+.dice.active {
+  background: white;
+  color: black;
+}
+
+.dice img {
+  width: 32px;
+  height: 32px;
+  pointer-events: none;
+  opacity: 0.4;
+  transition: opacity 0.2s;
+}
+
+.dice.active img {
+  opacity: 1;
+}
+
+footer {
+  padding: 1rem;
+  font-family: Arial, sans-serif;
+  font-size: 0.8rem;
+  color: #a5a5a5;
+}

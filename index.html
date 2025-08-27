@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Unofficial Hoplomachus Victorum Logbook</title>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="https://cdn.glitch.global/6ca5e966-140d-4d1f-a017-cfef39f26071/favicon-16x16.png?v=1747232364096"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="https://cdn.glitch.global/6ca5e966-140d-4d1f-a017-cfef39f26071/favicon-32x32.png?v=1747232366022"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="https://cdn.glitch.global/6ca5e966-140d-4d1f-a017-cfef39f26071/apple-touch-icon.png?v=1747232360601"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="https://cdn.glitch.global/6ca5e966-140d-4d1f-a017-cfef39f26071/android-chrome-192x192.png?v=1747232356596"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container py-3">
+      <div class="w-100 text-center mb-3">
+        <img
+          src="https://cdn.glitch.global/6ca5e966-140d-4d1f-a017-cfef39f26071/hoplomachus_victorum.svg?v=1747144383198"
+          class="img-fluid"
+          alt="Hoplomachus Victorum logo"
+        />
+        <br />
+        <img
+          src="https://cdn.glitch.global/6ca5e966-140d-4d1f-a017-cfef39f26071/mercury_boots.svg?v=1747227299649"
+          class="img-fluid"
+          alt="Mercury's Boots DLC"
+        />
+      </div>
+      <h1 class="visually-hidden">Hoplomachus: Victorum</h1>
+      <h2 class="mb-5">Unofficial digital logbook</h2>
+
+      <section class="section-box hero-box d-flex flex-column gap-1 mb-5">
+        <div class="icon-legend d-flex align-items-center gap-1" style="top:-1.6rem">
+          <img
+            src="https://cdn.glitch.global/6ca5e966-140d-4d1f-a017-cfef39f26071/hero.svg?v=1747223942207"
+            alt=""
+          />
+          <span class="badge badge-hero">
+              <input
+                type="text"
+                id="heroName"
+                placeholder="Write here your Hero name"
+                class="w-100"
+                aria-label="Your hero name"
+              />
+          </span>
+        </div>
+
+        <div class="d-flex align-items-center justify-content-between gap-2">
+          <!-- Hero classes -->
+          <div id="class" class="track track-symbols flex-nowrap single-select"></div>
+          
+          <div class="d-flex flex-wrap align-items-end justify-content-end gap-1">
+            <!-- Movement -->
+            <div class="d-flex align-items-center gap-1">
+              <label for="movement">
+                <img
+                  src="https://cdn.glitch.global/6ca5e966-140d-4d1f-a017-cfef39f26071/movement.svg?v=1747135560522"
+                  alt=""
+                />
+                <span class="visually-hidden">Movement</span>
+              </label>
+              <input
+                type="number"
+                id="movement"
+                min="1"
+                max="10"
+                maxlength="2"
+              />
+            </div>
+            <!-- Range -->
+            <div class="d-flex align-items-center gap-1">
+              <label for="range">
+                <img
+                  src="https://cdn.glitch.global/6ca5e966-140d-4d1f-a017-cfef39f26071/range.svg?v=1747135566198"
+                  class=""
+                  alt=""
+                />
+                <span class="visually-hidden">Range</span>
+              </label>
+              <input type="number" id="range" min="1" max="10" maxlength="2" />
+            </div>
+          </div>
+        </div>
+
+        <!--<div class="d-flex gap-2">
+          <input
+            type="text"
+            id="heroName"
+            placeholder="Hero name"
+            class="w-100"
+            aria-label="Your hero name"
+          />
+        </div>-->
+
+        <div class="row">
+          <div class="col-12 col-lg-8">
+            <!-- Health + Leadership + Blessing -->
+            <div class="generic-stats my-3">
+              <img
+                src="https://cdn.glitch.global/6ca5e966-140d-4d1f-a017-cfef39f26071/health.svg?v=1747135556448"
+                class="img2x"
+                alt=""
+              />
+              <span>Health</span>
+              <div id="health" class="track track-health"></div>
+            </div>
+            <div class="generic-stats my-3">
+              <img
+                src="https://cdn.glitch.global/6ca5e966-140d-4d1f-a017-cfef39f26071/leadership.svg?v=1747135559074"
+                class="img2x"
+                alt=""
+              />
+              <span>Leadership</span>
+              <div id="leadership" class="track track-leadership"></div>
+            </div>
+            <div class="generic-stats my-3">
+              <img
+                src="https://cdn.glitch.global/6ca5e966-140d-4d1f-a017-cfef39f26071/blessing.svg?v=1747135555139"
+                class="img2x"
+                alt=""
+              />
+              <span>Blessings</span>
+              <div id="blessings" class="track track-blessings"></div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-4 align-self-center">
+            <div id="diceModifiers" class="dice-grid"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-box generic-box mb-5">
+        <div class="icon-legend d-flex align-items-center gap-1">
+          <img
+            src="https://cdn.glitch.global/6ca5e966-140d-4d1f-a017-cfef39f26071/unit.svg?v=1747227512371"
+            alt=""
+          />
+          <span class="badge badge-generic">Opportunity and Navigation</span>
+        </div>
+
+        <div class="row">
+          <div
+            class="col-12 col-sm-6 d-flex flex-nowrap align-items-center generic-stats mb-2"
+          >
+            <!-- Opportunity -->
+            <img
+              src="https://cdn.glitch.global/6ca5e966-140d-4d1f-a017-cfef39f26071/opportunity.svg?v=1747135564515"
+              class="img2x"
+              alt=""
+            />
+            <span class="d-none d-lg-block">Opportunity capacity</span>
+            <div id="opportunity" class="track flex-nowrap"></div>
+          </div>
+          <div
+            class="col-12 col-sm-6 d-flex flex-nowrap align-items-center generic-stats"
+          >
+            <!-- Navigation -->
+            <img
+              src="https://cdn.glitch.global/6ca5e966-140d-4d1f-a017-cfef39f26071/navigation.svg?v=1747135561824"
+              class="img2x"
+              alt=""
+            />
+            <span class="d-none d-lg-block">Navigation</span>
+            <div id="navigation" class="track flex-nowrap"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-box generic-box mb-5">
+        <div class="icon-legend d-flex align-items-center gap-1">
+          <img
+            src="https://cdn.glitch.global/6ca5e966-140d-4d1f-a017-cfef39f26071/journey.svg?v=1747225473087"
+            alt=""
+          />
+          <span class="badge badge-generic">Journey</span>
+        </div>
+
+        <div id="journey" class="row">
+          <div class="col-12 col-md-6 d-flex align-items-center gap-3 mb-2">
+            <div class="track-label">I</div>
+            <div class="track flex-nowrap" data-act="1"></div>
+          </div>
+          <div class="col-12 col-md-6 d-flex align-items-center gap-3 mb-2">
+            <div class="track-label">II</div>
+            <div class="track flex-nowrap" data-act="2"></div>
+          </div>
+          <div class="col-12 col-md-6 d-flex align-items-center gap-3 mb-2">
+            <div class="track-label">III</div>
+            <div class="track flex-nowrap" data-act="3"></div>
+          </div>
+          <div class="col-12 col-md-6 d-flex align-items-center gap-3 mb-2">
+            <div class="track-label">IV</div>
+            <div class="track flex-nowrap" data-act="4"></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section-box generic-box text-center mb-3">
+        <div class="icon-legend d-flex align-items-center gap-1">
+          <img
+            src="https://cdn.glitch.global/6ca5e966-140d-4d1f-a017-cfef39f26071/section_scion.svg?v=1747225068781"
+            alt=""
+          />
+          <span class="badge badge-generic">Scion influence</span>
+        </div>
+
+        <div
+          id="scion"
+          class="track scion-track d-flex flex-wrap gap-2 justify-content-center"
+        ></div>
+      </section>
+
+      <div class="buttons d-grid gap-2 d-md-block">
+        <label>
+          <input type="checkbox" id="autoSave" />
+          Enable autosave
+        </label>
+        <button class="btn btn-success" onclick="save()">
+          💾 Save session
+        </button>
+        <button
+          id="reloadButton"
+          class="btn btn-secondary"
+          onclick="load(true)"
+        >
+          Restore last saved state
+        </button>
+        <button class="btn btn-link" onclick="reset()">
+          Start new session (delete all data)
+        </button>
+      </div>
+    </div>
+
+    <footer class="text-center mt-4">
+      <p>
+        This page is not affiliated with, sponsored by, or approved by
+        <strong>Chip Theory Games</strong>. All logos, images, and trademarks
+        are the property of their respective owners, especially © Chip Theory
+        Games.
+      </p>
+      <p>
+        This tool is completely free and created for personal, non-commercial
+        use only. No profit is made from its development or distribution.
+      </p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
